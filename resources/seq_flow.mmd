@@ -1,0 +1,12 @@
+sequenceDiagram
+    participant M as Main
+    participant B as BubbleSort
+    participant Q as QuickSort
+    participant Me as MergeSort
+    M->>M: run()
+    M->>B: sort(data)
+    B->>M: return sorted_data
+    M->>Q: sort(data)
+    Q->>M: return sorted_data
+    M->>Me: sort(data)
+    Me->>M: return sorted_data

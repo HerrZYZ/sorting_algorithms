@@ -1,0 +1,18 @@
+classDiagram
+    class Main{
+        +list data
+        +str algorithm
+        +run()
+    }
+    class BubbleSort{
+        +sort(data: list): list
+    }
+    class QuickSort{
+        +sort(data: list): list
+    }
+    class MergeSort{
+        +sort(data: list): list
+    }
+    Main -- BubbleSort: uses
+    Main -- QuickSort: uses
+    Main -- MergeSort: uses
